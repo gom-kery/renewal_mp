@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Taps + color flipper</title>
+
+        <!-- Style -->
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <nav>
+            <div class="nav-center">
+                <h4>Color flipper</h4>
+                <ul class="nav-links">
+                    <li><a href="taps.html">simple</a></li>
+                    <li><a href="hex.html">hex</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class="container">
+                <h2>background color : <span class="color">#f1f5f8</span></h2>
+                <button class="btn btn-hero" id="btn">CLICK</button>
+            </div>
+        </main>
+
+
+
+
+        <section class="section">
+            <div class="title">
+                <h2>World Of Warcraft : Dragonflight</h2>
+                <p>
+                    블리자드의 메인IP 게임 중 하나.<br>
+                    <span>
+                        <a href="https://worldofwarcraft.com/ko-kr/">'월드 오브 워크래프트'</a>
+                    </span>
+                    의 9번째 확장팩이다.
+                </p>
+            </div>
+
+            <div class="about-center section-center">
+                <article class="about-img">
+                    <img src="./df.jpg" alt="dragonflight picture">
+                </article>
+                
+                <article class="about">
+                    <!-- btn container -->
+                    <div class="btn-container">
+                        <button class="tab-btn active" data-id="version">Version</button>
+                        <button class="tab-btn" data-id="contents">Contents</button>
+                        <button class="tab-btn" data-id="schedule">Schedule</button>
+                    </div>
+                
+                <div class="about-content">
+                    <!--single item -->
+                    <div class="content active" id="version">
+                        <h4>Version</h4>
+                        <p>
+                            12월 28일 기준 10.0.2 버전이 반영되어 있다. <br>
+                            주요 컨텐츠로는 첫번째 레이드인 '현신의 금고'와 <br>
+                            쐐기 1시즌 어픽스 '천둥'이 반영되어 있는 상태이다.
+                        </p>
+                    </div>
+                    <!--end of single item -->
+
+                    <!--single item -->
+                    <div class="content" id="contents">
+                        <h4>Contents</h4>
+                        <p>
+                            - 새로운 지역 및 던전 추가 (용의 섬) <br>
+                            - 새로운 종족(드렉티르) 및 직업(기원사) 추가 <br>
+                            - 특성 시스템 개편 <br>
+                            - 기본 UI 커스터마이징 및 개편
+                            - 전문 기술 개편
+                        </p>
+                    </div>
+                    <!--end of single item -->
+
+                    <!--single item -->
+                    <div class="content" id="schedule">
+                        <h4>Schedule</h4>
+                        <p>
+                            <span>
+                                <a href="https://www.wowhead.com/news/wow-dragonflight-2023-roadmap-6-content-updates-planned-330697"><b>※용군단 2023년 로드맵</b> <br></a>
+                            </span>
+                            - 22년 11월 29일 : 확장팩 출시 <br>
+                            - 22년 11월 17일 : 용군단 사전 패치 2단계 반영 <br>
+                            - 22년 10월 27일 : 용군단 사전 패치 1단계 반영
+                        </p>
+                    </div>
+                    <!--end of single item -->
+                </article>
+
+            </div>
+        </section>
+        <!-- Javascript -->
+        <script src="app.js"></script>
+    </body>
+</html>
