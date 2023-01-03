@@ -1,0 +1,22 @@
+article - div - section 의 차이
+    : block의 속성을 갖고 있는 tag
+    : div 대신 사용해도 무방.
+
+     - div          : 요소 간 논리적으로 관계없는 요소를 나눠야할 때 사용.
+     - article      : 문서 혹은 요소가 독립적으로 존재할 수 있을 때 사용.
+     - section      : 논리적으로 관계 있는 문서 or 요소를 분리할 때 사용. 주제별로 묶을 때
+
+    
+    지양해야할 구조
+     <section>
+        <article> </article>
+        <article> </article>
+     </section>
+
+    가능한 구조
+     <article>                          <article>
+        <section> </section>                <div> </div>
+        <section> </section>                <div> </div>
+     </article>                         </article>
+      
+     
