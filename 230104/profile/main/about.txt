@@ -1,0 +1,12 @@
+font-awesome css에 관하여
+    : 헤더 영역 (<head></head>) 에 아래와 같이 참조하여 사용.
+    <link rel="~~" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+    - https://fontawesome.com/v4/icon/info 에서 아이콘의 모양 확인이 가능. 
+    - <span><i class="$아이콘명"></i></span> 의 형태로 사용.
+    
+
+# 현재까지 확인된 문제점
+    - project 메뉴  (simple.html)     네비 영역     기능 오동작 & 미동작
+    - FAQ 메뉴      (faq.html)        네비 영역     기능 CSS 미적용.

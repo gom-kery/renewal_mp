@@ -1,0 +1,46 @@
+# article - div - section 의 차이
+    : block의 속성을 갖고 있는 tag
+    : div 대신 사용해도 무방.
+
+     - div          : 요소 간 논리적으로 관계없는 요소를 나눠야할 때 사용.
+     - article      : 문서 혹은 요소가 독립적으로 존재할 수 있을 때 사용.
+     - section      : 논리적으로 관계 있는 문서 or 요소를 분리할 때 사용. 주제별로 묶을 때
+
+    
+   @ 지양해야할 구조
+     <section>
+        <article> </article>
+        <article> </article>
+     </section>
+
+   @ 가능한 구조
+     <article>                          <article>
+        <section> </section>                <div> </div>
+        <section> </section>                <div> </div>
+     </article>                         </article>
+      
+     
+
+# 이벤트 핸들러의 Event 객체        
+    .currentTarget      : EventListener를 가진 요소
+    .target             : 이벤트가 발생한 요소
+
+        ※ 참고용 블로그
+        https://db2dev.tistory.com/entry/JS-%EC%9D%B4%EB%B2%A4%ED%8A%B8%EC%9D%98-target%EA%B3%BC-currentTarget-%EC%B0%A8%EC%9D%B4-with-%EB%B2%84%EB%B8%94%EB%A7%81
+
+# DOM 제어 - element 탐색
+    @ 부모(parant) 태그
+        - .parantElement        : 태그만 찾음
+        - .parentNode           : 공백.. 등을 포함한 태그를 찾음
+
+    @ 자식(child) 태그
+        - .childNode            : text도 같이 찾음
+        - .getElementBy~        : 복합구조에 해당하는 태그를 찾음
+        - .children             : 종류에 상관없이 모든 태그를 찾음
+
+    @ 형제(sibling) 태그
+        - .nextSibling          : 공백을 포함한 텍스트도 같이 찾음
+        - .nextElementSibling   : 태그만 찾음
+
+
+    https://hianna.tistory.com/712        
